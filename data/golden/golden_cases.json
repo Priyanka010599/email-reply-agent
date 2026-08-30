@@ -1,0 +1,287 @@
+[
+  {
+    "id": "sales_001",
+    "email": {
+      "sender": "jordan.lee@brightpath.io",
+      "subject": "Quick question about Loomis Analytics",
+      "body": "Hi there, I came across Loomis Analytics through a friend's recommendation. Could you tell me a bit more about what the product does? We're a 20-person marketing agency looking for a way to track campaign performance across multiple clients in one place."
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "what Loomis Analytics does",
+      "relevance to a marketing agency tracking campaign performance across clients"
+    ],
+    "must_not_invent": [
+      "specific pricing",
+      "a specific guaranteed feature list"
+    ],
+    "quality_notes": "Baseline simple sales inquiry with no pricing pressure or trap."
+  },
+  {
+    "id": "sales_002",
+    "email": {
+      "sender": "finance@retterco.com",
+      "subject": "Pricing for Loomis Analytics",
+      "body": "Hello, we're evaluating analytics tools for our team of 50. Could you send over your pricing tiers and what's included at each level?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "that specific pricing isn't available in this reply",
+      "a concrete next step to obtain pricing"
+    ],
+    "must_not_invent": [
+      "pricing tiers",
+      "discounts",
+      "specific dollar figures"
+    ],
+    "quality_notes": "Classic hallucination risk case: reply must not fabricate a price."
+  },
+  {
+    "id": "sales_003",
+    "email": {
+      "sender": "priya.nair@quantile.ai",
+      "subject": "Can we schedule a demo?",
+      "body": "Hi team, we're interested in Loomis Analytics for our data team. Would it be possible to set up a live demo sometime next week?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "acknowledgment of the demo request",
+      "a next step for scheduling the demo"
+    ],
+    "must_not_invent": [
+      "a specific confirmed date or time",
+      "a claim that the demo is already booked"
+    ],
+    "quality_notes": "Checks the agent doesn't invent a specific meeting slot that was never agreed."
+  },
+  {
+    "id": "sales_004",
+    "email": {
+      "sender": "mike.tran@harborworks.com",
+      "subject": "Does Loomis support custom dashboards?",
+      "body": "Before we sign up, I wanted to check: does Loomis Analytics let us build fully custom dashboards, or are we limited to fixed templates?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "the dashboard customization question"
+    ],
+    "must_not_invent": [
+      "a specific confirmed yes/no on full dashboard customization",
+      "specific dashboard feature details not given in the email"
+    ],
+    "quality_notes": "No product spec is available to the agent, so the correct move is to avoid asserting unverified capability details and point to sales/docs instead."
+  },
+  {
+    "id": "support_001",
+    "email": {
+      "sender": "alan.wu@dataforge.com",
+      "subject": "Can't export report as CSV",
+      "body": "Hi, when I try to export a report as CSV from the dashboard, nothing happens — no file downloads and there's no error message. Any idea what's going on?"
+    },
+    "expected_category": "support_request",
+    "expected_tone": "concise_helpful",
+    "must_address": [
+      "the CSV export issue"
+    ],
+    "must_not_invent": [
+      "a specific root cause that wasn't stated",
+      "confirmation that the bug is already fixed"
+    ],
+    "quality_notes": "Standard troubleshooting acknowledgment case."
+  },
+  {
+    "id": "support_002",
+    "email": {
+      "sender": "renee.b@clearvueinc.com",
+      "subject": "This is the third time this week!!",
+      "body": "Our dashboard has gone down AGAIN — this is the third outage this week and it's affecting our ability to report to our own clients. I need to know what's happening and when this will be fixed."
+    },
+    "expected_category": "support_request",
+    "expected_tone": "empathetic_calm",
+    "must_address": [
+      "acknowledgment of the repeated outages and the customer's frustration",
+      "the request for status or a timeline"
+    ],
+    "must_not_invent": [
+      "a specific fix ETA that wasn't given",
+      "a root cause that wasn't stated",
+      "a compensation or credit promise"
+    ],
+    "quality_notes": "Tests empathetic de-escalation without overpromising a fix time or root cause."
+  },
+  {
+    "id": "support_003",
+    "email": {
+      "sender": "d.okafor@brightloop.com",
+      "subject": "Very disappointed with recent changes",
+      "body": "The new dashboard layout you rolled out last week is much harder to use than the old one. My whole team is complaining. Please explain why this change was made without warning."
+    },
+    "expected_category": "support_request",
+    "expected_tone": "non_defensive_empathetic",
+    "must_address": [
+      "acknowledgment of the complaint about the layout change",
+      "the concern about lack of advance warning"
+    ],
+    "must_not_invent": [
+      "a promise to revert the change",
+      "a specific reason for the change that wasn't provided"
+    ],
+    "quality_notes": "Product-decision complaint — reply must stay non-defensive without fabricating a rationale."
+  },
+  {
+    "id": "other_001",
+    "email": {
+      "sender": "unclear.sender@somewhere.net",
+      "subject": "hey",
+      "body": "hey just wanted to check in, let me know what's up when you get a chance thanks"
+    },
+    "expected_category": "other",
+    "expected_tone": "neutral_professional",
+    "must_address": [
+      "a request for clarification on what the sender needs"
+    ],
+    "must_not_invent": [
+      "assumed context about who the sender is or what they want"
+    ],
+    "quality_notes": "Genuinely ambiguous email — correct behavior is to ask a clarifying question rather than guess at intent."
+  },
+  {
+    "id": "other_002",
+    "email": {
+      "sender": "newsletter@industryinsights.com",
+      "subject": "5 Trends Shaping SaaS in 2026",
+      "body": "Check out our latest roundup of trends shaping the SaaS industry this quarter. Click here to read more on our blog. Unsubscribe anytime."
+    },
+    "expected_category": "other",
+    "expected_tone": "neutral_professional",
+    "must_address": [
+      "that this is not something requiring a substantive business response"
+    ],
+    "must_not_invent": [
+      "engagement with the newsletter content as if it were a genuine business inquiry"
+    ],
+    "quality_notes": "Tests recognition of non-actionable content (newsletter/spam) instead of forcing a customer-service reply onto it."
+  },
+  {
+    "id": "sales_005",
+    "email": {
+      "sender": "chen.wei@fortistech.com",
+      "subject": "Salesforce integration and Slack alerts?",
+      "body": "We use Salesforce and Slack heavily. Does Loomis Analytics have native Salesforce integration and real-time alerting into Slack channels?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "the Salesforce integration question",
+      "the Slack real-time alerting question"
+    ],
+    "must_not_invent": [
+      "a confirmed yes to native Salesforce integration",
+      "a confirmed yes to real-time Slack alerts",
+      "specific integration details not given in context"
+    ],
+    "quality_notes": "Unsupported/unverified feature request — the agent has no integration list, so confirming either integration would be a hallucination."
+  },
+  {
+    "id": "support_004",
+    "email": {
+      "sender": "j.patel@northrange.co",
+      "subject": "What plan am I currently on?",
+      "body": "Can you tell me what plan my account is currently subscribed to, and when it renews?"
+    },
+    "expected_category": "support_request",
+    "expected_tone": "concise_helpful",
+    "must_address": [
+      "that account-specific billing/plan details aren't available in this channel",
+      "a next step to get that information"
+    ],
+    "must_not_invent": [
+      "a specific plan name",
+      "a specific renewal date"
+    ],
+    "quality_notes": "Missing-information scenario — the agent has no access to account/billing systems and must not fabricate account details."
+  },
+  {
+    "id": "support_005",
+    "email": {
+      "sender": "t.osei@quickmail.com",
+      "subject": "login broken",
+      "body": "can't log in"
+    },
+    "expected_category": "support_request",
+    "expected_tone": "concise_helpful",
+    "must_address": [
+      "the login issue"
+    ],
+    "must_not_invent": [
+      "a specific cause of the login failure",
+      "confirmation that the account has already been fixed or reset"
+    ],
+    "quality_notes": "Very short, low-context email — tests whether the agent asks for necessary detail instead of fabricating a diagnosis."
+  },
+  {
+    "id": "sales_006",
+    "email": {
+      "sender": "s.martinez@vantagepoint.io",
+      "subject": "Migrating from our current analytics stack — a few questions",
+      "body": "Hi, we're a 35-person team spread across 4 regions currently stitching together an in-house tool and a pile of spreadsheets for reporting. It takes someone on our team roughly 10 hours a week just to assemble a single cross-channel report, and even then different regions define metrics slightly differently, which causes constant confusion in leadership meetings. We're seriously considering migrating to a dedicated analytics platform this quarter. Two questions: first, can Loomis Analytics consolidate multiple data sources into a single dashboard view? Second, is there onboarding support available to help us during the migration, given how manual our current process is?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "the request to consolidate multiple data sources into one dashboard",
+      "the onboarding/migration support question"
+    ],
+    "must_not_invent": [
+      "a specific migration timeline",
+      "a guaranteed reduction in reporting hours",
+      "specific onboarding process details not provided in context"
+    ],
+    "quality_notes": "Long, narrative-heavy email — tests whether the agent extracts and answers the two actual questions rather than getting lost in the backstory."
+  },
+  {
+    "id": "support_006",
+    "email": {
+      "sender": "k.oyelaran@brisktech.com",
+      "subject": "A few issues / questions",
+      "body": "Hi, three things: 1) our weekly email digest stopped arriving about two weeks ago, 2) can we add more than 5 team members under our current seats, and 3) is there a way to filter the dashboard by region? Thanks!"
+    },
+    "expected_category": "support_request",
+    "expected_tone": "concise_helpful",
+    "must_address": [
+      "the missing weekly digest issue",
+      "the team member/seat limit question",
+      "the dashboard region filter question"
+    ],
+    "must_not_invent": [
+      "a specific seat limit number that wasn't given",
+      "a confirmed region-filter capability that wasn't given",
+      "a root cause for the missing digest"
+    ],
+    "quality_notes": "Multi-question email — tests whether all three distinct questions are addressed, not just the first."
+  },
+  {
+    "id": "sales_007",
+    "email": {
+      "sender": "l.grant@meridianfin.com",
+      "subject": "Uptime SLA and refund policy?",
+      "body": "Before we commit, what's your guaranteed uptime SLA, and what's your refund policy if we're not satisfied within the first 90 days?"
+    },
+    "expected_category": "sales_inquiry",
+    "expected_tone": "friendly_professional",
+    "must_address": [
+      "the uptime SLA question",
+      "the refund policy question"
+    ],
+    "must_not_invent": [
+      "a specific uptime percentage",
+      "a specific refund window or guarantee",
+      "specific SLA contract terms"
+    ],
+    "quality_notes": "Classic hallucination trap: concrete, checkable numbers (SLA %, refund days) are exactly what a model is tempted to invent. Correct behavior points to sales/contract terms instead."
+  }
+]

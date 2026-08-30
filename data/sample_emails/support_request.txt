@@ -1,0 +1,14 @@
+From: alan.wu@dataforge.com
+Subject: Can't export report as CSV
+
+Hi,
+
+When I try to export a report as CSV from the dashboard, nothing happens —
+no file downloads and there's no error message on screen. I've tried it in
+both Chrome and Firefox with the same result.
+
+This is blocking a report I need to send to my manager today. Any idea
+what's going on?
+
+Thanks,
+Alan
